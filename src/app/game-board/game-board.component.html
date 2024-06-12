@@ -1,0 +1,8 @@
+<div class="board">
+  <app-game-cell *ngFor="let cell of board; index as i" [value]="cell" (cellClicked)="handleClick(i)">
+  </app-game-cell>
+</div>
+<div *ngIf="winner" class="winner">
+  Player {{ winner }} wins!
+</div>
+<button (click)="resetGame()">Reset Game</button>

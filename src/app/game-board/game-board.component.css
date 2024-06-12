@@ -1,0 +1,11 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin-bottom: 20px;
+}
+
+.winner {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
